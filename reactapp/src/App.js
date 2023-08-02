@@ -91,7 +91,7 @@ function App(){
           data.options.option3,
           option4:
           data.options.option4,
-        }} > </Card>
+        }} > </Card>)
       }
     </div>
     startBtn = <></>;
