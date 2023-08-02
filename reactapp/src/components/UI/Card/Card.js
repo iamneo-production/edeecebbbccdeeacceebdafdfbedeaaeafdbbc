@@ -6,7 +6,7 @@ correctAnswerMarkUpdate,
 attempt,
 options,
 answer}) => {
-    cosnt[state,setState] = useState(false);
+    const[state,setState] = useState(false);
     function disableBtn(){
         setState(true);
     }
