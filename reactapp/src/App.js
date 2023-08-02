@@ -64,6 +64,31 @@ function App(){
         option4: 'Green'
       },
       answer: 'Yellow'
-    }
+    },
   ]
+  const [startFlag,setStartFlag] = useState(false);
+  const [resultFlag,setResultFlag] = useState(false);
+  const [buttonText,setButtonText] = useState('Start Quiz');
+  const [questionsCorrect, setQuestionsCorrect] = useState(0);
+  const [answered,setAnswered] = useState(0);
+
+  function handleStart(){
+    setStartFlag(true);
+    setButtonText('Started');
+  }
+  if(startFlag){
+    qCards=
+    <div>
+      {
+        questionData.map((data) => 
+        <Card question= {data.question}
+        options= {{
+          option1:
+          data.options.option1,
+          option2:
+          data.options.option2
+        }}
+      }
+    </div>
+  }
 }
