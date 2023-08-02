@@ -16,13 +16,18 @@ answer}) => {
                 {question}
             </h4>
             <Button onClick={disableBtn}
-            disabled = {state} >{options.option1}
+            disabled = {state} > {options.option1}
             </Button>
             <Button onClick={disableBtn}
             disabled= {state} > {options.option2}
             </Button>
             <Button onClick={disableBtn}
             disabled= {state} > {options.option3}
+            </Button>
+            <Button onClick={disableBtn}
+            disbaled= {state} > {options.option4}
+            </Button>
+            </div>
     )
-
 }
+export default Card;
