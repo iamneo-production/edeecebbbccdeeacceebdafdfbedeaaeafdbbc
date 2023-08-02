@@ -67,10 +67,8 @@ function App(){
     },
   ]
   const [startFlag,setStartFlag] = useState(false);
-  const [resultFlag,setResultFlag] = useState(false);
-  const [buttonText,setButtonText] = useState('Start Quiz');
-  const [questionsCorect,] = useState(0);
-  }
+  
+  
 
   function handleStart(){
     setStartFlag(true);
