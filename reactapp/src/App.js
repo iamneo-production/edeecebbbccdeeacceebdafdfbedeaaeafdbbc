@@ -12,7 +12,7 @@ function App(){
   const questionData=[
     {
       key: 1,
-      question: 'Who is the father of the nation ?',
+      question: 'Who is the father of our nation ?',
       options: {
         option1: 'Mahatma Gandhi',
         option2: 'Jawaharlal Nehru',
@@ -86,9 +86,27 @@ function App(){
           option1:
           data.options.option1,
           option2:
-          data.options.option2
-        }}
+          data.options.option2,
+          option3:
+          data.options.option3,
+          option4:
+          data.options.option4,
+        }} > </Card>
       }
     </div>
+    startBtn = <></>;
   }
+  else{
+    startBtn = <Button onClick = {handleStart}>Start Quiz</Button>;
+  }
+  return (
+    <div className="App">
+      <h1>
+        Quizz App
+      </h1>
+      {qCards}
+      {startBtn}
+    </div>
+  );
 }
+export default App;
