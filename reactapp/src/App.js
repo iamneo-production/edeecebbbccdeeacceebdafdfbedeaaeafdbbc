@@ -67,13 +67,9 @@ function App(){
     },
   ]
   const [startFlag,setStartFlag] = useState(false);
-  const [showScore,setShowScore] = useState(false);
+  const [resultFlag,setResultFlag] = useState(false);
   const [buttonText,setButtonText] = useState('Start Quiz');
-  const [score,setScore] = useState(0);
-  const handleAnswerButtonClick = (isCorrect) => {
-    if(isCorrect === true){
-      setScore(score+1);
-    }
+  const [questionsCorect,] = useState(0);
   }
 
   function handleStart(){
