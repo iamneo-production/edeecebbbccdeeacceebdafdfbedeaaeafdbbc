@@ -67,7 +67,7 @@ function App(){
     },
   ]
   const [startFlag,setStartFlag] = useState(false);
-  
+  const [buttonText,setButtonText] = useState('Start Quiz');
   
 
   function handleStart(){
