@@ -9,7 +9,25 @@ function App(){
   const questionData=[
     {
       key:1,
-      question:'Who is the father of the nation ?'
+      question: 'Who is the father of the nation ?',
+      options:{
+        option1: 'Mahatma Gandhi',
+        option2: 'Jawaharlal Nehru',
+        option3: 'Donald Trump',
+        option4: 'Barack Obama',
+      },
+      answer: 'Mahatma Gandhi'
+    },
+    {
+      key:2,
+      question: 'What color is are the leaves ?',
+      options:{
+        option1: 'Blue',
+        option2: 'Red',
+        option3: 'Yellow',
+        option4: 'Green',
+      },
+      answer: 'Green'
     }
   ]
 }
