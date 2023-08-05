@@ -65,7 +65,36 @@ function App(){
   ]
   const[startFlag,setStartFlag]=useState(false);
   const[resultFlag,setResultFlag]=useState(false);
-  const [buttonText,setButtonText]=useState('Satrt')
+  const [buttonText,setButtonText]=useState('Start Quiz');
+  const [questionsCorrect,setQuestionsCorrect]=useState(0);
+  const [answered,setAnswered]= useState(0);
+
+  function handleStart(){
+    setStartFlag(true);
+    setButtonText('Started');
+  }\if(startFlag){
+    qCards=
+    <div>
+      {
+        questionData.map(data) => 
+        <Card question={data.question}
+        options={{
+          option1:
+          data.options.option1,
+          option2:
+          data.options.option2,
+          option3:
+          data.options.option3,
+          option4:
+          data.options.option4,
+        }} > </Card> )
+      } 
+      </div>
+      startBtn= <></>;
+      }
+      else{
+        startBtn=<Button onClick={handleStart}>Start Qui</Button>
+      }
 }
 
 export default App;
