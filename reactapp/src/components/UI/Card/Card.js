@@ -21,8 +21,10 @@ question,correctAnswerMarkUpdate,attempt,options,answer}) => {
             disabled={state}>{options.option3}
             </button>
             <button onClick={disableBtn}
-            disab
+            disabled={state}>{options.option4}
+            </button>
 
         </div>
     )
 }
+export default Card;
