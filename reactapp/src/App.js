@@ -28,8 +28,44 @@ function App(){
         option4: 'Green',
       },
       answer: 'Green'
-    }
+    },
+    {
+      key:3,
+      question: 'What color is the sky ?',
+      options:{
+        option1: 'Blue',
+        option2: 'Red',
+        option3: 'Yellow',
+        option4: 'Green',
+      },
+      answer: 'Blue'
+    },
+    {
+      key:4,
+      question: 'What color is the sky ?',
+      options:{
+        option1: 'Blue',
+        option2: 'Red',
+        option3: 'Yellow',
+        option4: 'Green',
+      },
+      answer: 'Blue'
+    },
+    {
+      key:5,
+      question: 'What color is the fire ?',
+      options:{
+        option1: 'Blue',
+        option2: 'Red',
+        option3: 'Yellow',
+        option4: 'Green',
+      },
+      answer: 'Yellow'
+    },
   ]
+  const[startFlag,setStartFlag]=useState(false);
+  const[resultFlag,setResultFlag]=useState(false);
+  const [buttonText,setButtonText]=useState('Satrt')
 }
 
 export default App;
