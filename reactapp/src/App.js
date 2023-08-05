@@ -72,11 +72,12 @@ function App(){
   function handleStart(){
     setStartFlag(true);
     setButtonText('Started');
-  }\if(startFlag){
+  }
+  if(startFlag){
     qCards=
     <div>
       {
-        questionData.map(data) => 
+        questionData.map((data) => 
         <Card question={data.question}
         options={{
           option1:
@@ -88,13 +89,22 @@ function App(){
           option4:
           data.options.option4,
         }} > </Card> )
-      } 
+      }
       </div>
       startBtn= <></>;
       }
       else{
-        startBtn=<Button onClick={handleStart}>Start Qui</Button>
+        startBtn=<Button onClick={handleStart}>Start Quiz</Button>;
       }
+      return(
+        <div className="App">
+          <h1>
+            Quizz App
+          </h1>
+          {qCards}
+          {startBtn}
+        </div>
+      );
 }
 
 export default App;
